@@ -29,6 +29,6 @@
     }
   },
   "dockerfile": "./Dockerfile",
-  "input": "./.actor/input_schema.json",
+  "input": "./input_schema.json",
   "readme": "./README.md"
 }
