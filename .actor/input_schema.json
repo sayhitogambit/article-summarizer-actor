@@ -35,12 +35,14 @@
     "model": {
       "title": "AI Model",
       "type": "string",
+      "description": "AI model to use for generation",
       "enum": ["anthropic/claude-3.5-sonnet", "openai/gpt-4o", "google/gemini-2.0-flash-exp:free"],
       "default": "anthropic/claude-3.5-sonnet"
     },
     "openrouterApiKey": {
       "title": "OpenRouter API Key",
       "type": "string",
+      "description": "Your OpenRouter API key from https://openrouter.ai/keys",
       "isSecret": true
     }
   },
