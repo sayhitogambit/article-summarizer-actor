@@ -1,0 +1,34 @@
+{
+  "actorSpecification": 1,
+  "name": "article-summarizer",
+  "title": "AI Article Summarizer - OpenRouter",
+  "description": "Summarize articles, documents, and long-form content using AI. Extract key points, main topics, and create concise summaries in paragraph, bullet, or abstract format. Perfect for research, content curation, and information processing.",
+  "version": "1.0.0",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Article Summaries",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": ["originalWordCount", "summary", "keyPoints", "compressionRatio", "cost"]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "originalWordCount": {"label": "Original Words", "format": "number"},
+              "summary": {"label": "Summary", "format": "text"},
+              "keyPoints": {"label": "Key Points", "format": "array"},
+              "compressionRatio": {"label": "Compression", "format": "text"},
+              "cost": {"label": "Cost ($)", "format": "number"}
+            }
+          }
+        }
+      }
+    }
+  },
+  "dockerfile": "./Dockerfile",
+  "input": "./.actor/input_schema.json",
+  "readme": "./README.md"
+}

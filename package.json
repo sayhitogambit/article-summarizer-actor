@@ -1,0 +1,9 @@
+{
+  "name": "article-summarizer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {"start": "node src/main.js"},
+  "dependencies": {"apify": "^3.4.2", "axios": "^1.6.0"},
+  "engines": {"node": ">=18.0.0"}
+}

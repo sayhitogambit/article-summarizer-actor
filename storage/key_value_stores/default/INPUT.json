@@ -1,0 +1,8 @@
+{
+  "text": "Artificial intelligence has revolutionized content marketing in recent years. Companies are leveraging AI tools to generate blog posts, social media content, and marketing copy at scale. These tools use large language models trained on vast amounts of text data to produce human-like content. While AI-generated content can save time and resources, it's important to review and edit the output to ensure accuracy and brand voice alignment. The future of content marketing will likely involve a hybrid approach, combining AI efficiency with human creativity and oversight.",
+  "length": "medium",
+  "format": "paragraph",
+  "includeKeyPoints": true,
+  "model": "google/gemini-2.0-flash-exp:free",
+  "openrouterApiKey": "YOUR_OPENROUTER_API_KEY_HERE"
+}

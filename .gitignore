@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+.vscode
+node_modules
+*.log
+.env
+apify_storage
+crawlee_storage
+storage/*
+!storage/key_value_stores
+!storage/key_value_stores/default
+!storage/key_value_stores/default/INPUT.json

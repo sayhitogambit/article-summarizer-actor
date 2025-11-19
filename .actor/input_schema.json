@@ -1,0 +1,48 @@
+{
+  "title": "Article Summarizer Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "text": {
+      "title": "Article Text",
+      "type": "string",
+      "description": "The article or document text to summarize",
+      "editor": "textarea",
+      "minLength": 50
+    },
+    "length": {
+      "title": "Summary Length",
+      "type": "string",
+      "description": "Desired summary length",
+      "enum": ["short", "medium", "long"],
+      "default": "medium",
+      "enumTitles": ["Short (50-100 words)", "Medium (150-200 words)", "Long (300-400 words)"]
+    },
+    "format": {
+      "title": "Summary Format",
+      "type": "string",
+      "description": "Output format for the summary",
+      "enum": ["paragraph", "bullets", "abstract"],
+      "default": "paragraph",
+      "enumTitles": ["Paragraph", "Bullet Points", "Academic Abstract"]
+    },
+    "includeKeyPoints": {
+      "title": "Include Key Points",
+      "type": "boolean",
+      "description": "Extract 3-5 key takeaways",
+      "default": true
+    },
+    "model": {
+      "title": "AI Model",
+      "type": "string",
+      "enum": ["anthropic/claude-3.5-sonnet", "openai/gpt-4o", "google/gemini-2.0-flash-exp:free"],
+      "default": "anthropic/claude-3.5-sonnet"
+    },
+    "openrouterApiKey": {
+      "title": "OpenRouter API Key",
+      "type": "string",
+      "isSecret": true
+    }
+  },
+  "required": ["text", "openrouterApiKey"]
+}
