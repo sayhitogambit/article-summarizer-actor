@@ -1,0 +1,100 @@
+{
+  "title": "Article Summarizer Output",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "originalText": {
+      "title": "Original Text",
+      "type": "string",
+      "description": "The original text that was summarized",
+      "editor": "textarea"
+    },
+    "originalWordCount": {
+      "title": "Original Word Count",
+      "type": "integer",
+      "description": "Number of words in the original text",
+      "editor": "number"
+    },
+    "summary": {
+      "title": "Summary",
+      "type": "string",
+      "description": "The generated summary of the article",
+      "editor": "textarea"
+    },
+    "keyPoints": {
+      "title": "Key Points",
+      "type": "array",
+      "description": "Main takeaway points from the article",
+      "editor": "json",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mainTopics": {
+      "title": "Main Topics",
+      "type": "array",
+      "description": "Main topics and themes covered in the article",
+      "editor": "json",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summaryWordCount": {
+      "title": "Summary Word Count",
+      "type": "integer",
+      "description": "Number of words in the summary",
+      "editor": "number"
+    },
+    "compressionRatio": {
+      "title": "Compression Ratio",
+      "type": "string",
+      "description": "Ratio of original to summary length (e.g., '5.2:1')",
+      "editor": "textfield"
+    },
+    "format": {
+      "title": "Format",
+      "type": "string",
+      "description": "The format of the summary",
+      "editor": "select",
+      "enum": ["paragraph", "bullets", "abstract"]
+    },
+    "length": {
+      "title": "Length",
+      "type": "string",
+      "description": "Target length of the summary",
+      "editor": "select",
+      "enum": ["short", "medium", "long"]
+    },
+    "model": {
+      "title": "AI Model",
+      "type": "string",
+      "description": "The AI model used for summarization",
+      "editor": "textfield"
+    },
+    "cost": {
+      "title": "API Cost",
+      "type": "number",
+      "description": "Total API cost in USD",
+      "editor": "number"
+    },
+    "chargePrice": {
+      "title": "Charge Price",
+      "type": "number",
+      "description": "Price charged to user in USD",
+      "editor": "number"
+    },
+    "profit": {
+      "title": "Profit",
+      "type": "number",
+      "description": "Profit from this summarization in USD",
+      "editor": "number"
+    },
+    "summarizedAt": {
+      "title": "Summarized At",
+      "type": "string",
+      "description": "ISO timestamp of when this was summarized",
+      "editor": "textfield",
+      "format": "date-time"
+    }
+  }
+}
