@@ -14,6 +14,7 @@
       "title": "Summary Length",
       "type": "string",
       "description": "Desired summary length",
+      "editor": "select",
       "enum": ["short", "medium", "long"],
       "default": "medium",
       "enumTitles": ["Short (50-100 words)", "Medium (150-200 words)", "Long (300-400 words)"]
@@ -22,6 +23,7 @@
       "title": "Summary Format",
       "type": "string",
       "description": "Output format for the summary",
+      "editor": "select",
       "enum": ["paragraph", "bullets", "abstract"],
       "default": "paragraph",
       "enumTitles": ["Paragraph", "Bullet Points", "Academic Abstract"]
@@ -30,12 +32,14 @@
       "title": "Include Key Points",
       "type": "boolean",
       "description": "Extract 3-5 key takeaways",
+      "editor": "checkbox",
       "default": true
     },
     "model": {
       "title": "AI Model",
       "type": "string",
       "description": "AI model to use for generation",
+      "editor": "select",
       "enum": ["anthropic/claude-3.5-sonnet", "openai/gpt-4o", "google/gemini-2.0-flash-exp:free"],
       "default": "anthropic/claude-3.5-sonnet"
     },
@@ -43,6 +47,7 @@
       "title": "OpenRouter API Key",
       "type": "string",
       "description": "Your OpenRouter API key from https://openrouter.ai/keys",
+      "editor": "textfield",
       "isSecret": true
     }
   },
